@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "206790165723",
+    "firebase_url": "https://sudoku-duel-a54cb.firebaseio.com",
+    "project_id": "sudoku-duel-a54cb",
+    "storage_bucket": "sudoku-duel-a54cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206790165723:android:cfe056c688dbad212d38fe",
+        "android_client_info": {
+          "package_name": "com.example.sudokuduel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206790165723-mgosm0e4af2kpoekro14s69f5hat2prs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJJmd5KCv5wfW3ufwmzVBHr3ZwMTCkeho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206790165723-mgosm0e4af2kpoekro14s69f5hat2prs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

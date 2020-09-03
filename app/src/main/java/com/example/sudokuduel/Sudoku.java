@@ -37,6 +37,47 @@ class Sudoku {
         removeNums(64);
     }
 
+    Sudoku(List<Long> puzzleFlat, List<Long> solutionFlat) {
+        //TODO: make height and length changeable?
+        this.length = 3;
+        this.height = 3;
+        this.numLeft = 0;
+        int nums = length * height;
+        puzzle = new int[nums][nums];
+        solution = new int[nums][nums];
+        for (int b = 0; b < length * height; b++) {
+            for (int s = 0; s < length * height; s++) {
+                puzzle[b][s] = puzzleFlat.get(b * nums + s).intValue();
+                solution[b][s] = solutionFlat.get(b * nums + s).intValue();
+                if (puzzle[b][s] == 0) {
+                    numLeft += 1;
+                }
+            }
+        }
+    }
+
+    List<Integer> getPuzzleFlat() {
+        int nums = length * height;
+        List<Integer> puzzleFlat = new ArrayList<>();
+        for (int b = 0; b < length * height; b++) {
+            for (int s = 0; s < length * height; s++) {
+                puzzleFlat.add(puzzle[b][s]);
+            }
+        }
+        return puzzleFlat;
+    }
+
+    List<Integer> getSolutionFlat() {
+        int nums = length * height;
+        List<Integer> solutionFlat = new ArrayList<>();
+        for (int b = 0; b < length * height; b++) {
+            for (int s = 0; s < length * height; s++) {
+                solutionFlat.add(solution[b][s]);
+            }
+        }
+        return solutionFlat;
+    }
+
     private void removeNums(int max) {
         List<Square> removable = new ArrayList<>();
         for (int b = 0; b < length * height; b++) {

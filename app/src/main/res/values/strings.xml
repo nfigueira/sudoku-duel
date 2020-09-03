@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Sudoku Duel</string>
+    <string name="private_game_prompt_message">Enter the game ID:</string>
 
 </resources>
